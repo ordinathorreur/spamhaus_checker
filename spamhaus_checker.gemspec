@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Ivan Petroye"]
   gem.email         = ["petroei@gmail.com"]
   gem.description   = %q{Gem to check if provided server IP is listed in sbl.spamhaus.org}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.summary       = %q{Write a gem summary}
   gem.homepage      = "https://github.com/offtop/spamhaus_checker"
 
   gem.files         = `git ls-files`.split($/)

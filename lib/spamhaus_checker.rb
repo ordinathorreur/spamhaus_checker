@@ -1,6 +1,4 @@
 require "spamhaus_checker/version"
-require 'net-dns'
-
 module SpamhausChecker
 
   class SBLChecker
