@@ -5,14 +5,13 @@ require 'spamhaus_checker/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "spamhaus_checker"
-  gem.version       = SpamhausChecker::VERSION
+  gem.summary       = "First gem"
+  gem.version       = "0.0.4" 
   gem.authors       = ["Ivan Petroye"]
   gem.email         = ["petroei@gmail.com"]
   gem.description   = %q{Gem to check if provided server IP is listed in sbl.spamhaus.org}
-  gem.summary       = %q{Write a gem summary}
   gem.homepage      = "https://github.com/offtop/spamhaus_checker"
-
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = Dir["lib/**/*", "[A-Z]*", "init.rb"] - ["Gemfile.lock"]  
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
