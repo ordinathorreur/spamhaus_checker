@@ -1,10 +1,10 @@
 require 'rubygems'
 require 'net/dns'
 module SpamhausChecker
-  class Sbl
+  class Zen
     attr_reader :server_ip
     def initialize(server_ip)
-      @answer = Net::DNS::Resolver.start(server_ip.to_s + "sbl.spamhaus.org")
+      @answer = Net::DNS::Resolver.start(server_ip.to_s + ".zen.spamhaus.org")
     end
 
     def blacklisted?
