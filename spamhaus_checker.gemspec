@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "spamhaus_checker"
-  gem.summary       = "Validating presence of IP in ZEN spamhaus server"
-  gem.version       = "0.0.6" 
+  gem.summary       = "Validating presence of IP in ZEN spamhaus DNSBL"
+  gem.version       = "0.0.7" 
   gem.authors       = ["Ivan Petroye"]
   gem.email         = ["petroei@gmail.com"]
-  gem.description   = %q{Gem to check if provided server IP is listed in sbl.spamhaus.org}
+  gem.description   = %q{Gem to check if provided server IP is listed in zen.spamhaus.org, now works with IPv4 only}
   gem.homepage      = "https://github.com/offtop/spamhaus_checker"
   gem.files         = Dir["lib/**/*", "[A-Z]*", "init.rb"] - ["Gemfile.lock"]  
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
