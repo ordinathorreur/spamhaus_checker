@@ -5,7 +5,7 @@ module SpamhausChecker
     attr_reader :server_ip, :answer
     def initialize(server_ip, zen_domain= "zen.spamhaus.org")
       @server_ip = server_ip
-      resolver = Net::DNS::Resolver.new(:nameservers => "194.109.9.7", :dns_search => false)
+      resolver = Net::DNS::Resolver.new( :dns_search => false)
       reversed_ip = server_ip.to_s.split(".").reverse.join(".")
       @answer = resolver.query([reversed_ip, zen_domain].join("."))
     end
