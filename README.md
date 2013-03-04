@@ -28,8 +28,7 @@ Or install it yourself as:
 
 ## TODO 
     
-    1. Solve an issue with tests, right now it works good only if I define direct nameserver for query, this is not how it's suposed to work
-    2. Add validation for IPv4 addresses
-    3. Add ability to run query for list of servers
-    4. Add compatibility for IPv6 names
+    1. Add validation for IPv4 addresses
+    2. Add ability to run query for list of servers
+    3. Add compatibility for IPv6 names
     
