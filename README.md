@@ -24,11 +24,10 @@ Or install it yourself as:
 ## Comments 
     
     Gem is tested only for IPv4 protocol, 
-    no validation for IP address added yet, no tests for IPv6 provided.
+    no tests for IPv6 provided.
 
 ## TODO 
     
-    1. Add validation for IPv4 addresses
-    2. Add ability to run query for list of servers
-    3. Add compatibility for IPv6 names
+    1. Add ability to run query for list of servers
+    2. Add compatibility for IPv6 names
     
