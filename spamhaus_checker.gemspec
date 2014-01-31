@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |gem|
   gem.name          = "spamhaus_checker"
   gem.summary       = "Validating presence of IP in ZEN spamhaus DNSBL"
-  gem.version       = "0.1.3" 
+  gem.version       = "0.1.4" 
   gem.authors       = ["Ivan Petroye"]
   gem.email         = ["petroei@gmail.com"]
   gem.description   = "Gem to check if provided server IP is listed in zen.spamhaus.org"
@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
   gem.add_dependency "net-dns"
+  gem.add_dependency "ipaddress"
 end
